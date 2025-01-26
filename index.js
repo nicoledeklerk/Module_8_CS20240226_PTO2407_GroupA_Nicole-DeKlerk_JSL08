@@ -19,6 +19,12 @@ class BankBranch{
     }
 }
 
+const branchB = new BankBranch('ABSA', 'Kimberley', 97531)
+const branchA = new BankBranch('Capitec Bank', 'Danielskuil', 13579);
+
+console.log(branchA.getBranchInfo());
+console.log(branchB.getBranchInfo());
+
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
 //    - Inside the constructor, check if the `bankBranchInstance` variable is null (indicating no instance exists).
