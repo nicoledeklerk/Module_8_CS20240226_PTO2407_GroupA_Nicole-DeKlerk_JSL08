@@ -19,11 +19,14 @@ class BankBranch{
     }
 }
 
-const branchB = new BankBranch('ABSA', 'Kimberley', 97531)
-const branchA = new BankBranch('Capitec Bank', 'Danielskuil', 13579);
+const branchA = new BankBranch({name: 'ABSA', location:'Kimberley', account: 97531})
+const branchB = new BankBranch({name:'Capitec Bank', location: 'Danielskuil', account: 13579});
 
 console.log(branchA.getBranchInfo());
 console.log(branchB.getBranchInfo());
+
+console.log(branchA === branchB);
+
 
 // 3. In the `BankBranch` class:
 //    - Create a constructor that takes `branchInfo` as a parameter.
