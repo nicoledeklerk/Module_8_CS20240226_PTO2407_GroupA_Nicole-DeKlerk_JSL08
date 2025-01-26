@@ -13,6 +13,10 @@ class BankBranch{
 
         this.branchInfo = branchInfo;
     }
+
+    getBranchInfo() {
+        return this.branchInfo
+    }
 }
 
 // 3. In the `BankBranch` class:
